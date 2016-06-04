@@ -8,3 +8,30 @@ Please report any issues or improvement ideas to [the github issue tracker](http
 Pull requests welcome! Let's work together!
 
 Say thanks by adding a star [here](https://github.com/greyltc/docker-nextcloud/) and/or [here](https://registry.hub.docker.com/u/greyltc/nextcloud/).
+
+### Usage
+
+1. [**Install docker**](https://docs.docker.com/installation/)
+1. **Download and start the Nextcloud server instance**  
+
+  ```
+docker pull greyltc/nextcloud
+docker run --name nc -p 80:80 -p 443:443 -d greyltc/nextcloud
+```
+1. **Access your Nextcloud server**  
+Point your web browser to __https://localhost/nextcloud__
+1. **Setup nextcloud**  
+Follow the on-screen instructions to perform the initial setup of your server.
+
+1. **[Optional] Stop the server instance**
+
+  ```
+docker stop nc
+```
+You can restart the container later with `docker start nc`
+1. **[Optional] Delete the server instance**  
+
+  ```
+docker rm nc #<--WARNING: this will delete anything stored inside the container
+```
+1. **Profit.**
