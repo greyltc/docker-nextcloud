@@ -20,8 +20,8 @@ pacman -S --noconfirm --noprogress --needed imagemagick ghostscript openexr open
 pacman -S --noconfirm --noprogress --needed gamin
 
 # nextcloud itself
-su docker -c 'pacaur -Sm --noprogressbar --noedit --noconfirm nextcloud'
-pacman -U --noconfirm --needed /home/docker/.cache/pacaur/nextcloud/nextcloud-${OC_VERSION}-any.pkg.tar
+su docker -c 'pacaur -m --noprogressbar --noedit --noconfirm nextcloud'
+pacman -U --noconfirm --needed /home/docker/.cache/pacaur/nextcloud/nextcloud-${NC_VERSION}-any.pkg.tar
 
 # setup Apache for nextcloud
 cp /etc/webapps/nextcloud/apache.example.conf /etc/httpd/conf/extra/nextcloud.conf
