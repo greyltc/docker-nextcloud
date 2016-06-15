@@ -19,9 +19,10 @@ docker pull greyltc/nextcloud
 docker run --name nc -p 80:80 -p 443:443 -d greyltc/nextcloud
 ```
 1. **Access your Nextcloud server**  
-Point your web browser to __https://localhost/nextcloud__
+Point your web browser to __https://localhost/nextcloud__  
+__Note:__ If you're on MacOS or Windows you can't use "localhost" here. Run `docker-machine ip default` to figure out what you should use in place of localhost.
 1. **Setup nextcloud**  
-Follow the on-screen instructions to perform the initial setup of your server.
+Follow the instructions in your browser to perform the initial setup of your server.
 
 1. **[Optional] Stop the server instance**
 
