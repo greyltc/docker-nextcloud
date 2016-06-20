@@ -20,6 +20,7 @@ pacman -S --noconfirm --noprogress --needed imagemagick ghostscript openexr open
 pacman -S --noconfirm --noprogress --needed gamin
 
 # nextcloud itself
+su docker -c 'gpg --recv-key D75899B9A724937A'
 su docker -c 'pacaur -m --noprogressbar --noedit --noconfirm nextcloud'
 pacman -U --noconfirm --needed /home/docker/.cache/pacaur/nextcloud/nextcloud-${NC_VERSION}-any.pkg.tar
 
