@@ -5,7 +5,7 @@ MAINTAINER Grey Christoforo <grey@christoforo.net>
 # and/or starring the project on GitHub
 
 # uncomment this to update the container's mirrorlist
-#RUN get-new-mirrors
+RUN get-new-mirrors
 
 # set environmnt variable defaults
 ENV TARGET_SUBDIR nextcloud
