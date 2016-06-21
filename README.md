@@ -1,4 +1,5 @@
 # docker-nextcloud
+[![](https://imagelayers.io/badge/greyltc/nextcloud:latest.svg)](https://imagelayers.io/?images=greyltc/nextcloud:latest 'imagelayers badge')
 
 This is just like [my ownCloud server Docker container repo](https://github.com/greyltc/docker-owncloud/) only it's for [Nextcloud](https://nextcloud.com). [Here is some background](http://fortune.com/2016/06/03/what-happened-to-owncloud/) relating to the ownCloud/Nextcloud fissure.
 
