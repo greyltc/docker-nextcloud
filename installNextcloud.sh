@@ -21,7 +21,7 @@ pacman -S --noconfirm --noprogress --needed gamin
 
 # nextcloud itself
 su docker -c 'pacaur -m --noprogressbar --noedit --noconfirm nextcloud-daily'
-pacman -U --noconfirm --needed /home/docker/.cache/pacaur/nextcloud/nextcloud-daily-${NC_VERSION}-any.pkg.tar
+pacman -U --noconfirm --needed /home/docker/.cache/pacaur/nextcloud-daily/nextcloud-daily-${NC_VERSION}-any.pkg.tar
 
 # setup Apache for nextcloud
 cp /etc/webapps/nextcloud/apache.example.conf /etc/httpd/conf/extra/nextcloud.conf
