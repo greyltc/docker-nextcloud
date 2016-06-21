@@ -10,7 +10,7 @@ MAINTAINER Grey Christoforo <grey@christoforo.net>
 # set environmnt variable defaults
 ENV TARGET_SUBDIR nextcloud
 ENV ALLOW_INSECURE false
-ENV NC_VERSION '9.0.51-1'
+ENV NC_VERSION '9.0.51-3'
 
 # do the install things
 ADD installNextcloud.sh /usr/sbin/install-nextcloud
