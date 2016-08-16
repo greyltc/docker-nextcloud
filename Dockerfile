@@ -7,6 +7,9 @@ MAINTAINER Grey Christoforo <grey@christoforo.net>
 # uncomment this to update the container's mirrorlist
 #RUN get-new-mirrors
 
+# we listen for https connections
+EXPOSE 443
+
 # set environmnt variable defaults
 ENV TARGET_SUBDIR nextcloud
 ENV ALLOW_INSECURE false
