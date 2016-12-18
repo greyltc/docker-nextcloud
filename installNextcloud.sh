@@ -13,6 +13,9 @@ pacman -S --noconfirm --noprogress --needed ffmpeg
 # for document previews
 pacman -S --noconfirm --noprogress --needed libreoffice-fresh
 
+# for ssh mounts
+pacman -S --noconfirm --noprogress --needed openssh
+
 # for image previews
 pacman -S --noconfirm --noprogress --needed imagemagick ghostscript openexr openexr openexr libxml2 librsvg libpng libwebp
 
