@@ -13,7 +13,7 @@ EXPOSE 443
 # set environmnt variable defaults
 ENV TARGET_SUBDIR nextcloud
 ENV ALLOW_INSECURE false
-ENV NC_VERSION '11.0.0-1'
+ENV NC_VERSION '11.0.0-2'
 
 # do the install things
 ADD installNextcloud.sh /usr/sbin/install-nextcloud
