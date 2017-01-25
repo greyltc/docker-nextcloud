@@ -37,3 +37,8 @@ You can restart the container later with `docker start nc`
 docker rm nc #<--WARNING: this will delete anything stored inside the container
 ```
 1. **Profit.**
+
+1. **Updating Nextcloud**
+
+Periodically new NextCloud server versions will be released. You should probably keep your server on whatever the latest stable version is. When a new update is released you'll see a banner appear across the top of the NextCloud web interface indicating that it's time to upgrade.
+You should follow the official NextCloud instructions for updating your NextCloud server using the updater app built into this container. You'll need to change the permissions of some files in the container to allow them to be updated. I've tried to make this straightforward by including a script to manage the permissions for you. Before you run the updater app (as described in the official instructions), run docker exec -it nc sh -c 'set-nc-perms upgrade'. Then after you've completed the upgrade, set the permissions back to their "safer" default values like this: docker exec -it nc sh -c 'set-nc-perms runtime'.
