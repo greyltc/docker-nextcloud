@@ -38,7 +38,7 @@ docker rm nc #<--WARNING: this will delete anything stored inside the container
 ```
 1. **Profit.**
 
-**Updating Nextcloud**
+### Updating Nextcloud
 
 Periodically new NextCloud server versions will be released. You should probably keep your server on whatever the latest stable version is. Whenever a new update is released, you'll see a banner appear across the top of the NextCloud web interface indicating that it's time to upgrade. I do not reccommend somehow switching your already running NextCloud server to a new version of this container (although you're welcome to try if your data isn't critical).  
 
