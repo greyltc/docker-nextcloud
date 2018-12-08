@@ -1,4 +1,4 @@
-FROM greyltc/lamp-aur
+FROM greyltc/lamp
 MAINTAINER Grey Christoforo <grey@christoforo.net>
 # Report issues with this to the GitHub project: https://github.com/greyltc/docker-nextcloud/issues
 # Say thanks by adding a star or a comment here: https://registry.hub.docker.com/u/greyltc/nextcloud/
